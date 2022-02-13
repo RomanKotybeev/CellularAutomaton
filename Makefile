@@ -1,7 +1,6 @@
 CC = gcc
 SRCMODULES = ca.c table_fill.c viewca.c
 OBJMODULES = $(SRCMODULES:.c=.o)
-CFLAGS = -g -Wall
 
 %.o: %.c %.h
 	$(CC) $(CFLAGS) -c $< -o $@
